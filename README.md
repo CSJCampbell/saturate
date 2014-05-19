@@ -27,4 +27,5 @@ This R package contains one top level function that adjusts the saturation of a 
 eg <- c("hotpink", "cornflowerblue", "#1100EE")
 saturate(eg, sat = 20)
 saturate(eg, sat = 0.2)
+hist(rnorm(100), col = saturate(col = "red", sat = 4^(-10:1)))
 ```
