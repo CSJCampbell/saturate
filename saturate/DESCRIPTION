@@ -1,12 +1,9 @@
 Package: saturate
 Type: Package
-Title: Example saturate Source for TestCoverage
+Title: Modify Colour Saturation
 Version: 1.0
-Date: 2013-11-26
+Date: 2014-05-19
 Author: ccampbell
 Maintainer: Mango Solutions <sales@mango-solutions.com>
-Description: Example Package for TestCoverage
+Description: Adjust the saturation of a colour
 License: GPL-2
-Collate:
-    'saturate.R'
-    'saturateHSV.R'
