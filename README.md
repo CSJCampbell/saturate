@@ -26,6 +26,9 @@ This R package contains one top level function that adjusts the saturation of a 
 ```R
 eg <- c("hotpink", "cornflowerblue", "#1100EE")
 saturate(eg, sat = 20)
+# [1] "#FF0984" "#085AED" "#1100EE"
 saturate(eg, sat = 0.2)
+# [1] "#FFC6E3" "#BACCED" "#1201EE"
 hist(rnorm(100), col = saturate(col = "red", sat = 4^(-10:1)))
 ```
+![histogram with saturation updated](https://raw.githubusercontent.com/CSJCampbell/saturate/master/hist_rnorm_100.png "hist(rnorm(100), col = saturate(col = 'red', sat = 4^(-10:1)))")
