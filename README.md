@@ -6,16 +6,15 @@ An [R package](http://www.r-project.org/) to adjust the saturation of a colour.
 how to use this code
 --------
 
-To install this package you will need:
-* R
-* Rtools
+Installation from github requires the devtools package to be installed.
 
-Note that you must manually update your environmental variable PATH to include these utilities.
-
-This package includes comments in **roxygen2** format. 
-From R (and when located one level above folder saturate) run the command 
-`roxygenise("saturate")` to build the help files. 
-To build the package on Windows use the command `R CMD INSTALL --build saturate` from the command window.
+```R
+# Install devtools for devtools::install_github
+install.packages("devtools")
+require(devtools)
+# Install testCoverage
+devtools::install_github("CSJCampbell/saturate/saturate")
+```
 This package also includes tests in **testthat** format. From R run the call `test_package("saturate")`.
 
 what is this code for?
@@ -24,6 +23,7 @@ what is this code for?
 This R package contains one top level function that adjusts the saturation of a colour.
 
 ```R
+require(saturate)
 eg <- c("hotpink", "cornflowerblue", "#1100EE")
 saturate(eg, sat = 20)
 # [1] "#FF0984" "#085AED" "#1100EE"
